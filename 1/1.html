@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="rus">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1</title>
+</head>
+<body>
+    <h2 id = "for_fragment">Гиперссылки: </h2>
+    <ul>
+        <li>
+            <a href="http://www.kubsu.ru">Официальный сайт КубГУ</a>
+        </li>
+        <li>
+            <a href="https://www.kubsu.ru">Официальный сайт КубГУ</a>
+        </li>
+        <li>
+            Ссылка-изображение: <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%81%D0%B0%D1%82%D0%BA%D0%B0_(%D0%BC%D0%BB%D0%B5%D0%BA%D0%BE%D0%BF%D0%B8%D1%82%D0%B0%D1%8E%D1%89%D0%B5%D0%B5)"><img src="https://avatars.mds.yandex.net/i?id=0a8dc1da8b47ac63e1b06dadc55e1a3f_l-5141109-images-thumbs&n=27&h=480&w=480" width="100" alt=""></a>
+        </li>
+        <li>
+            Сокращённая ссылка на внутреннюю страницу<a href="./1.2.html"> (Перейти)</a>
+        </li>
+        <li>
+            Ссылка на фрагмент текущей страницы<a href="#for_fragment"> (Перейти)</a>
+        </li>
+        <li>
+            Ссылка с тремя параметрами в URL<a href="https://example.com/page?param1=value1&param2=value2&param3=value3"> (Перейти)</a>
+        </li>
+        <li>
+            Ссылка с параметром id<a href="https://example.com/page?id=123"> (Перейти)</a>
+        </li>
+        <li>
+            Относительная ссылка на страницу в текущем каталоге<a href="1.html"> (Перейти)</a>
+        </li>
+        <li>
+            Относительная ссылка на страницу в каталоге about: <a href="about/1.3.html"> (Перейти)</a>
+        </li>
+        <li>
+            Контекстная ссылка в тексте абзаца<a href="https://www.yandex.ru"> (Перейти)</a>
+        </li>
+        <li>
+            Ссылка на фрагмент страницы постороннего сайта<a href="https://example.com/page#fragment"> (Перейти)</a>
+        </li>
+        <li>
+            <img src="https://avatars.mds.yandex.net/i?id=0a8dc1da8b47ac63e1b06dadc55e1a3f_l-5141109-images-thumbs&n=27&h=480&w=480" alt="Пример изображения" usemap="#imagemap" width="600" height="400">
+            <map name="imagemap">
+                <area shape="rect" coords="50,50,150,150" href="https://example.com/rectangle" alt="Прямоугольник">
+                <area shape="circle" coords="300,100,50" href="https://example.com/circle" alt="Круг">
+            </map>
+        </li>
+        <li>
+            Ссылка с пустым href: <a href=""> (Перейти)</a>
+        </li>
+        <li>
+            Cсылка без href: <a> (Перейти)</a>
+        </li>
+        <li>
+            Ссылка, по которой запрещен переход поисковикам: <a href="https://www.yandex.ru" rel="nofollow"> (Перейти)</a>
+        </li>
+        <li>
+            Запрещенная для индексации поисковиками: <meta name="robots" content="noindex, nofollow">
+        </li>
+        <li>
+            <ol>
+                <li>
+                    Ссылка с title: <a href="https://www.google.com" title="title_examp1"> (Перейти)</a>
+                </li>
+                <li>
+                    Ссылка с title: <a href="https://www.yandex.ru" title="title_examp2"> (Перейти)</a>
+                </li>
+            </ol>
+        </li>
+        <li>
+            Ссылка на файл на сервере FTP с авторизацией <a href="ftp://userabc:pass123@ftp.example.com/files/file.txt"> (Перейти)</a>
+        </li>
+    </ul>
+    <h2>Формы: </h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <span>Пункт 1 </span><input type="text" placeholder="Введите ФИО: "><br>
+        <span>Пункт 2 </span><input type="tel" placeholder="Введите номер телефона: "><br>
+        <span>Пункт 3 </span><input type="email" placeholder="Введите email"><br>
+        <span>Пункт 4 </span><input type="date" placeholder="Дата рождения: "><br>
+        <div>
+            <p>Пол: </p>
+            <p><input type="radio" name = "gender" value = "male">Мужской</p>
+            <p><input type="radio" name = "gender" value = "female">Женский</p>
+        </div>
+        <div>
+            <p> <span>Любимый язык программирования: </span>
+            <select name="lang">
+                <option value=""></option>
+                <option value="Pascal">Pascal</option>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="JS">JavaScript</option>
+                <option value="PHP">PHP</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="Haskel">Haskel</option>
+                <option value="Clojure">Clojure</option>
+                <option value="Prolog">Prolog</option>
+                <option value="Scala">Scala</option>
+            </select></p>
+        </div>
+        <div>
+            <span>Биография: </span><br>
+            <textarea placeholder="Расскажите о себе: "></textarea>
+        </div>
+        <div>
+            <p>
+                <span>С контрактом ознакомлен (-а)</span>
+                <input type="checkbox" name="agreement">
+            </p>
+        </div>
+        <button type="submit">Сохранить</button>
+    </form>
+</body>
+</html>
