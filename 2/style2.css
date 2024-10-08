@@ -4,7 +4,6 @@ body {
     padding: 0;
     text-align: center;
     align-items: center;
-    max-width: 960px;
 }
   
 header {
@@ -32,6 +31,7 @@ nav a {
 }
   
 main {
+    max-width: 960px;
     padding: 20px;
     align-items: center;
     margin: 0 25%;
