@@ -31,10 +31,11 @@ nav a {
 }
   
 main {
-    max-width: 960px;
+    text-align: left;
+    margin: 0 25%;
     padding: 20px;
     align-items: center;
-    margin: 0 25%;
+    max-width: 960px;
 }
 main ul{
     list-style: none;
