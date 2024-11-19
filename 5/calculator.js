@@ -1,3 +1,5 @@
+window.addEventListener('DOMContentLoaded', function (event) {
+  console.log("DOM fully loaded and parsed"); });
 function calculateCost() {
     const quantity = parseInt(document.getElementById('quantity').value); 
     const productPrice = parseInt(document.getElementById('product').value); 
