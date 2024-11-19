@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function (event) {
   console.log("DOM fully loaded and parsed"); 
   let b = document.getElementById("cost");
-  b.addEventListener("click", onClick);
+  b.addEventListener("click", calculateCost);
 });
 function calculateCost() {
     const quantity = parseInt(document.getElementById('quantity').value); 
