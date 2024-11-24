@@ -1,15 +1,15 @@
-window.addEventListener('DOMContentLoaded', function (event) {
-  console.log("DOM fully loaded and parsed");
+window.addEventListener('DOMContentLoaded', function () {
+    console.log("DOM fully loaded and parsed");
+    const costButton = document.getElementById('cost');
+    costButton.addEventListener('click', calculateCost);
 });
-function onClick(event) {
-  let b = document.getElementById("cost");
-  b.addEventListener("click", calculateCost);
-  event.preventDefault();
-  alert("click");
-}
-function calculateCost() {
+
+function calculateCost(event) {
+    event.preventDefault();  
+
     const quantity = parseInt(document.getElementById('quantity').value); 
     const productPrice = parseInt(document.getElementById('product').value); 
+
     if (quantity <= 0) {
         document.getElementById('result').innerHTML = 'Количество товара должно быть больше нуля.';
         return; 
