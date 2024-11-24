@@ -1,5 +1,5 @@
 function onClick(event) {
-    event.preventDefault();  // Предотвращаем стандартное поведение, если это форма
+    event.preventDefault();
 
     // Получаем значения из полей ввода
     const quantity = parseInt(document.getElementById('quantity').value); 
