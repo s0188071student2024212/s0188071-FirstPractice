@@ -1,5 +1,5 @@
 function onClick(event) {
-    event.preventDefault();
+    event.preventDefault();  // Предотвращаем стандартное поведение, если это форма
 
     // Получаем значения из полей ввода
     const quantity = parseInt(document.getElementById('quantity').value); 
@@ -16,6 +16,9 @@ function onClick(event) {
 
     // Выводим результат
     document.getElementById('result').innerHTML = `Стоимость заказа: ${totalCost} руб.`;
+
+    // Выводим alert
+    alert("click");
 }
 
 // Назначаем обработчик клика после загрузки DOM
