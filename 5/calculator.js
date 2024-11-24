@@ -8,7 +8,6 @@ function calculateCost() {
         document.getElementById('result').innerHTML = 'Количество товара должно быть больше нуля.';
         return; 
     }
-
     const totalCost = quantity * productPrice; 
     document.getElementById('result').innerHTML = `Стоимость заказа: ${totalCost} руб.`;
-}
+} 
